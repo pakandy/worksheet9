@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+  <!-- Program: grid-area.html -->
+  <!-- Author: Andy Pak, Sheridan College -->
+  <!-- Date: Nov, 2020 -->
+  <!-- This program illustrates the use of grid-area to create layout-->
+  <html lang="en">
+    <head>
+      <title>Grid-area</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <style>
+
+        .grid {
+          display: grid;
+          background-color: #2196F3;
+          grid-gap: 10px;
+          padding: 5px;
+        }
+        
+        .d1 { grid-area: 2 / 3 / 4 / 4; color: red; }
+        .d2 { grid-area: 1 / 2 / 2 / 3; color: rgb(193, 53, 193); }
+        .d3 { grid-area: 1 / 4 / span 2 / span 2; color: rgb(9, 167, 33); } 
+
+        .grid > div {
+          background-color: rgba(255,255,255,0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+        h1 { text-align: center; }
+      </style>
+    </head>
+    <body>
+      <h1>Grid Layout with grid-area</h1>
+      <div class='grid'>
+        <div class='d1'>Div 1</div>
+        <div class='d2'>Div 2</div>
+        <div class='d3'>Div 3</div>
+        <div class='d4'>Div 4</div>
+        <div class='d5'>Div 5</div>
+        <div class='d6'>Div 6</div>
+        <div class='d7'>Div 7</div>
+        <div class='d8'>Div 8</div>
+        <div class='d9'>Div 9</div>
+        <div class='d10'>Div 10</div>
+        <div class='d11'>Div 11</div>
+        <div class='d12'>Div 12</div>
+      </div>
+    </body>
+  </html>

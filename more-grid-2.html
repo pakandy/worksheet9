@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Program: more-grid-2.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program illustrates the use of grid-template-columns/rows and 
+     grid-template-areas to create layout-->
+<html>
+  <head>
+    <title>Grid-2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      .grid-container1 {
+        display: grid;
+        gap: 2px;
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: 3em 15em 2em;
+      }
+      .grid-container2 {
+        display: grid;
+        gap: 2px;
+        grid-template-areas: 
+        '. . hr hr hr .'
+        'nav nav mn mn mn as'
+        'ft ft ft ft ft ft';
+        grid-template-rows: 3em 15em 2em;
+        grid-template-columns: 10% 10% auto auto auto auto;
+      }
+      div, nav, article, aside, footer { text-align: center; font-size: 1.5em; }
+      nav { background-color: green; }
+      article { background-color: lightblue; }
+      aside { background-color: beige; }
+      header, footer {
+        background:  #2196F3;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='grid-container1'>
+        <header class="header" style="grid-column-start: 2;">Header<br>Template Columns</header>
+        <nav class="nav" style="grid-column-start: 1;">Nav<hr></nav>
+        <article class="article">Article</article>
+        <aside class="aside">Aside</aside>
+        <footer class="footer" style="grid-column-start: 1; grid-column-end: 4;">Footer</footer>
+    </div><br><br>
+    
+    <div class='grid-container2'>
+      <header class='header' style="grid-area: hr;">Header<br>Template Areas</header>
+      <nav style="grid-area: nav;">Nav<hr></nav>
+      <article style="grid-area: mn;">Article</article>
+      <aside style="grid-area: as;">Aside</aside>
+      <footer style="grid-area: ft;">Footer</footer>
+    </div>  
+  </body>
+</html>

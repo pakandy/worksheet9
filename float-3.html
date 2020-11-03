@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<!-- Program: float-3.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program illustrates the use of float property -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Positioning</title>
+
+<style>
+	.outer { position: relative; left: 10em; }
+	main { border: 1px solid black; height: 20em; width: 50em; }
+	#img1 { float: none; }
+	#img2 { float: left; }
+	#img3 { float: right; }
+</style>
+</head>
+
+<body>
+	<section class='outer'>
+		<main> 
+			<h2>float: none</h2>
+			<img id='img1' src='./images/sheridan.jpeg'> 
+			<p>Founded in 1967, Sheridan has grown from a local college of 400 students to one of Ontario’s leading postsecondary institutions, educating approximately 24,500 full-time and 18,500 continuing and part-time studies students every year 
+			on three campuses in three Ontario cities – Oakville, Brampton and Mississauga.</p>
+		</main>
+		<main> 
+			<h2>float: left</h2>
+			<img id='img2' src='./images/sheridan.jpeg'> 
+			<p>Founded in 1967, Sheridan has grown from a local college of 400 students to one of Ontario’s leading postsecondary institutions, educating approximately 24,500 full-time and 18,500 continuing and part-time studies students every year 
+			on three campuses in three Ontario cities – Oakville, Brampton and Mississauga.</p>
+		</main>
+		<main> 
+			<h2>float: right</h2>
+			<img id='img3' src='./images/sheridan.jpeg'> 
+			<p>Founded in 1967, Sheridan has grown from a local college of 400 students to one of Ontario’s leading postsecondary institutions, educating approximately 24,500 full-time and 18,500 continuing and part-time studies students every year 
+			on three campuses in three Ontario cities – Oakville, Brampton and Mississauga.</p>
+		</main>
+	</section>
+
+</body>
+
+</html>

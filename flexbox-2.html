@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- Program: flexbox-2.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program creates a basic layout with images using flexbox -->
+<html lang="en">
+  <head>
+    <title>Flexbox-2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <style>
+      body {
+        height: 100vh;
+        text-align: center; 
+        font-weight: bold;
+      }
+      main { display: flex; flex: 1; font-size: 1.25em; }
+      main > nav { flex: 0 0 15%; order: 1; }
+      main > article { order: 2; }
+      article > img { margin: 10px; max-width: 18vw; }
+      header, footer { background:  #2196F3; }
+      header, footer, article, nav, aside { border: 1px solid black; padding: 0.5em; } 
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+    </header>
+    <main>
+      <nav>Menu
+        <hr>
+        <p><a href=''>Item 1</a></p>
+        <p><a href=''>Item 2</a></p>
+        <p><a href=''>Item 3</a></p>
+      </nav>
+      <article>
+        <img src='./images/davis.png'>
+        <img src='./images/hmc.png'>
+        <img src='./images/sheridan.png'>
+        <img src='./images/traf.png'>
+        <img src='./images/davis.png'>
+        <img src='./images/hmc.png'>
+        <img src='./images/sheridan.png'>
+        <img src='./images/traf.png'>
+        <img src='./images/hmc.png'>
+        <img src='./images/sheridan.png'>
+        <img src='./images/traf.png'>
+        <img src='./images/hmc.png'>
+        <img src='./images/sheridan.png'>
+        <img src='./images/traf.png'>
+        <img src='./images/hmc.png'>
+        <img src='./images/sheridan.png'>
+        <img src='./images/traf.png'>
+      </article>  
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

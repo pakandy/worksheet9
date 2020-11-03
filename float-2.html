@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!-- Program: float-2 -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program illustrates the use of float, clear, and position properties -->
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>HTML Positioning</title>
+
+<style>
+	h1 { font-family: verdana; margin: 10px; }
+	section {
+		font-family: tahoma, sans-serif;
+		line-height: 120%;
+		margin: 1px;
+		width: 280px;
+		padding: 25px;
+		border: 1px solid;
+	}
+	#first { background-color: yellow; float: right; }
+	#second { background-color: pink; float: left; }
+	#third { background-color: orange; clear: right; }
+	#outer {
+		position: relative;
+		background-color: teal;
+		width: 900px;
+		height: 800px;
+		margin: 15px;
+		border: 1px solid;
+	}
+	
+</style>
+</head>
+<body>
+	<section id="outer">  
+		<section id="first">
+			<h1>Header 1 <code>(float: right)</code></h1>
+			<p>Founded in 1967, Sheridan has grown from a local college of 400 students to one of Ontario’s leading postsecondary institutions.</p>
+		</section>
+		
+		<section id="second">
+			<h1>Header 2 <code>(float: left)</code></h1>
+			<p>An award-winning institution, Sheridan attracts students from across Canada and around the world.</p>
+		</section>
+		
+		<section id="third">
+			<h1>Header 3 <code>(clear: right)</code></h1>
+			<p>Our Creative Campus means your courses are designed to give you problem solving and critical thinking tools.</p>
+		</section>
+ 	</section>  
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- Program: flexbox-1.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program creates a basic layout using the flexbox -->
+<html lang="en">
+  <head>
+    <title>Flexbox-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <style>
+      body {
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+      }
+      main { display: flex; flex: 1; font-size: 1.25em; } 
+      main > nav { flex: 0 0 10%; order: 1; }
+      main > article { flex: 1; order: 2; }
+      main > aside { flex: 0 0 20%; order: 3; }
+      header, footer { background:  #2196F3; }
+      header, footer, article, nav, aside { border: 1px solid black; padding: 0.5em; } 
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+    </header>
+    <main>
+      <nav>Menu
+          <hr>
+          <p><a href=''>Item 1</a></p>
+          <p><a href=''>Item 2</a></p>
+          <p><a href=''>Item 3</a></p>
+      </nav>
+      <article>Article</article>
+      <aside>Aside</aside> 
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

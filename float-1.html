@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!-- Program: float-1.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program illustrates the use of float and position properties -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Positioning</title>
+
+<style>
+	#outer {
+		position: relative; 
+		left: 0px;
+		border: 1px solid;
+		width: 1200px;
+		height: 1000px;
+	}
+	h1 { font-family: verdana; margin: 10px; }
+	section {
+		font-family: tahoma, sans-serif;
+		line-height: 120%;
+		margin: 1px;
+		width: 200px;
+		padding: 25px;
+		border: 1px solid;
+	}
+	#first { float: right; width: 150px; background: red; }
+	#second { background: yellow; width: 500px; }
+	#third { float: right; background: blue; width: 250px;}
+	#four { position: fixed; top: 400px; left: 250px; width: 400px; 
+			background-color:moccasin; }
+	
+</style>
+</head>
+
+<body>
+	<section id="outer">
+		<section id="first">
+			<h1>Header 1 <code>(float: right)</code></h1>
+			<p>Founded in 1967, Sheridan has grown from a local college of 400 students to one of Ontario’s leading postsecondary institutions.</p>
+		</section>
+		
+		<section id="second">
+			<h1>Header 2 <code>(static)</code></code></h1>
+			<p>An award-winning institution, Sheridan attracts students from across Canada and around the world.</p><p>Sheridan’s Faculty of Applied Science and Technology (FAST) provides a purposeful and nimble post secondary education.
+			At FAST, we provide practical, hands-on learning opportunities that can be carried from the classroom to the workforce. Our high-intensity and industry-renowned programs equip you with relevant knowledge and real-world problem solving skills.
+			From computing to engineering, architectural technology to chemistry and skilled trades, as a FAST graduate, you’ll have more opportunities in a rapidly changing world.</p>
+		</section>
+		
+		<section id="third">
+			<h1>Header 3 <code>(float: right)</code></h1>
+			<p>Our Creative Campus means your courses are designed to give you problem solving and critical thinking tools.</p>
+		</section>
+
+		<section id="four">
+			<h1>Head 4 <code>(fixed)</code></h1>
+			<p>Our Creative Campus means your courses are designed to give you problem solving and critical thinking tools throughout your program, top to bottom. We’re the first undergraduate school to offer a creativity course available to any student in any faculty.</p>
+		</section>
+	</section>
+</body>
+
+</html>
