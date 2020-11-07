@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Program: practice_01_flexmargin.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program illustrates the use of flexbox and margin with auto value -->
+<html lang="en">
+  <head>
+    <title>CSS Flexbox/Margin auto</title>
+    <style>
+      .navbar { border: pink solid 2px; display: flex; }
+      #ea { background-color: pink; margin-right: auto; margin-left: auto; }
+      #eb { background-color: lightblue; margin-right: auto; }
+      #ec { background-color: orange; margin-right: auto; }  
+      #ed { background-color:aquamarine; }  
+      #ee { background-color:rgb(228, 133, 236); margin-left: auto; margin-right: auto; }  
+    </style>
+  </head>
+  
+  <body>
+    <h2>Flexbox with margin auto</h2>
+    <div class='navbar'>
+      <div id='ea'>Element A</div>
+      <div id='eb'>Element B</div>
+      <div id='ec'>Element C</div>
+      <div id='ed'>Element D</div>
+      <div id='ee'>Element E</div>
+    </div>
+  </body>
+</html>

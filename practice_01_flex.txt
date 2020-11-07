@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<!-- Program: practice_01_flex.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program creates a basic layout using CSS flex -->
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>Practice 01 Flex</title>
+		<style>
+			.flex1 { display: flex; flex: 1; font-size: 1.25em; } 
+			.flex2 { display: flex; flex-direction: column;
+				flex: 1; font-size: 1.25em; } 
+			.outline {
+				font-size: 18pt;
+				font-weight: normal;
+				margin: 10px 0px;
+				padding: 10px 0px ;
+				height: 100px;
+				background-color: white;
+				border: thick solid purple;
+				width: 99.5%;
+				text-align: center;
+			}
+			#bx1 { background-color: red; }
+			#bx2 { width: 35%;  height: 240px; margin: 0 0 10px 0;
+				background-color: rgb(75, 149, 235);
+			}
+			#bx3 {
+				width: 93.5%;
+				margin: 0 0 0.4em 2em;
+				background-color: green;
+			}
+			#bx4 {
+				width: 93.5%;
+				margin: 0 0 0.4em 2em; 
+				background-color: yellow;
+			}
+			#bx5 { background-color: silver; }
+		</style>
+	</head>
+	<body>
+		<section class="outline" id="bx1">Header</section>
+		<div class='flex1'>
+			<section class="outline" id="bx2">Nav</section>
+			<div class='flex2'>
+				<section class="outline" id="bx3">Main</section>
+				<section class="outline" id="bx4">Aside</section>
+			</div>
+		</div>
+		<section class="outline" id="bx5">Footer</section>
+		<div style='font-weight: bold; float: right; '>Practice 1 - Flex</div>
+	</body>
+</html>
